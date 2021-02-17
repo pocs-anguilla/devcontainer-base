@@ -1,0 +1,53 @@
+name: anguilla-devcontainer
+channels:
+- conda-forge
+dependencies:
+- python=3.9
+- "libblas=*=*openblas"
+- numpy
+- numba
+- scipy
+- matplotlib
+- pandas
+- black
+- pydocstyle
+- pycodestyle
+- pytest
+- mypy
+- make
+- cmake
+- ninja
+- patch
+- clang
+- clangxx
+- libclang
+- libclang-cpp
+- clang-tools
+- gxx_linux-64
+- libstdcxx-ng
+- libcxx
+- boost
+- libjpeg-turbo
+- libpng
+- libzip
+- openblas
+- libblas
+- libcblas
+- liblapack
+- jupyterlab
+- sphinx==3.5.1
+- sphinx-autoapi==1.6.0
+- sphinxcontrib-apidoc==0.3.0
+- sphinxcontrib-napoleon==0.7
+- sphinxcontrib-bibtex==1.0.0
+- sphinx_rtd_theme==0.5.1
+- jupyter_sphinx
+- pybind11
+- scikit-build
+- ipympl
+- pip
+- pip:
+  - build
+  - benchit
+  - coverage[toml]
+  - pytest-cov
