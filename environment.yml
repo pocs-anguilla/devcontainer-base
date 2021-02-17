@@ -2,7 +2,7 @@ name: anguilla-devcontainer
 channels:
 - conda-forge
 dependencies:
-- python=3.9
+- python=3.8
 - "libblas=*=*openblas"
 - numpy
 - numba
@@ -35,7 +35,7 @@ dependencies:
 - libcblas
 - liblapack
 - jupyterlab
-- sphinx==3.5.1
+- sphinx==3.4.3
 - sphinx-autoapi==1.6.0
 - sphinxcontrib-apidoc==0.3.0
 - sphinxcontrib-napoleon==0.7
