@@ -63,5 +63,12 @@ COPY environment.yml .
 RUN set -x && \
     . ${CONDA_DIR}/etc/profile.d/conda.sh && conda activate base && conda env create -f environment.yml
 
-ENTRYPOINT ["tini", "--"]
-CMD [ "/bin/bash" "-c"]
+RUN set -x && \
+    ln -s /usr/bin/clang-12  /usr/local/bin/clang && \
+    ln -s /usr/bin/clang++-12  /usr/local/bin/clang++
+
+RUN set -x && \
+    apt-get update && \
+    apt-get install -y libicu-dev
+
+SHELL ["tini", "--", "/bin/bash", "-c"]
