@@ -65,7 +65,10 @@ RUN set -x && \
 
 RUN set -x && \
     ln -s /usr/bin/clang-12  /usr/local/bin/clang && \
-    ln -s /usr/bin/clang++-12  /usr/local/bin/clang++
+    ln -s /usr/bin/clang++-12  /usr/local/bin/clang++ && \
+    ln -s /usr/bin/clangd-12 /usr/local/bin/clangd && \
+    ln -s /usr/bin/clang-format-12 /usr/local/bin/clang-format && \
+    ln -s /usr/bin/clang-tidy-12 /usr/local/bin/clang-tidy
 
 RUN set -x && \
     apt-get update && \
